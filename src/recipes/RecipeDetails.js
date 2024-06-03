@@ -17,7 +17,7 @@ const RecipeDetail = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-2">{recipe.name}</h1>
-      <img src={recipe.image} alt={recipe.name} className="w-full mb-4" />
+      <img src={recipe.image} alt={recipe.name} className="mb-4 justify-center w-[200px] h-[200px]" />
       <h2 className="font-semibold">Ingredients</h2>
       <ul className="list-disc ml-5 mb-4">
         {recipe.ingredients.map((ingredient, index) => (
