@@ -5,11 +5,12 @@ import RecipeDetail from './recipes/RecipeDetails'
 import './index.css'
 import Header from './components/header';
 import Footer from './components/footer';
-
+import { ThemeProvider } from './context/ThemeContext';
 
 const App = () => {
   return (
-      <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
+        <ThemeProvider>
         <Header />
         <main className="flex-grow">
     <Routes>
@@ -18,6 +19,7 @@ const App = () => {
       </Routes>
       </main>
       <Footer />
+    </ThemeProvider>
     </div>
   );
 };
